@@ -17,7 +17,9 @@ import { NavComponent } from './nav/nav.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([])
+    RouterModule.forRoot([
+      
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
