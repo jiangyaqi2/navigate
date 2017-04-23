@@ -641,47 +641,6 @@ body {
 }
 
 
-/*.ui-datatable .ui-datatable-scrollable-header .ui-datatable-scrollable-header-box{
-    margin: 0 !important;
-}*/
-/*.ui-datatable .ui-datatable-scrollable-header .ui-datatable-scrollable-header-box .ui-column-resizer {
-    margin: 0;
-    width: 0 !important;
-    height: 100%;
-    padding: 0;
-    border: 0px solid transparent
-}*/
-/*.ui-datatable .ui-datatable-scrollable-body tbody tr:nth-child(2n),
-.ui-datatable .ui-datatable-scrollable-body tbody td:nth-child(2n){
-    background: #f6f7f9;66CCFF
-    background:rgba(246,247,249,0.9);
-}
-.ui-datatable .ui-datatable-scrollable-body  tr.ui-state-hover td:nth-child(2n),
-.ui-datatable .ui-datatable-scrollable-body  tr.ui-state-highlight td:nth-child(2n)
-{
-    background-color:transparent;
-    filter:alpha(opacity=80);-moz-opacity:0.8;opacity: 0.2;
-    background: red 0.2;
-    background-color: rgba(246,247,249,0.1); IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 
-    filter：alpha(opacity=0,finishopacity=100,style=1,startx=0,starty=85,finishx=150,finishy=85);
-}*/
-/*.ui-datatable .ui-datatable-scrollable-body tbody td{
-    background: #f6f7f9;66CCFF
-    background:rgba(246,247,249,0.9);
-    background-color: #d9d9d9;
-}
-
-.ui-datatable .ui-datatable-scrollable-body  tr.ui-state-hover td ,
-.ui-datatable .ui-datatable-scrollable-body  tr.ui-state-highlight td ,
-.ui-datatable .ui-datatable-scrollable-body  tr.ui-state-hover td .ui-cell-data,
-.ui-datatable .ui-datatable-scrollable-body  tr.ui-state-highlight td .ui-cell-data
-{
-    background-color:transparent;
-    filter:alpha(opacity=80);-moz-opacity:0.8;opacity: 0.2;
-    background: red 0.2;
-    background-color: rgba(246,247,249,0.1); IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 
-    filter：alpha(opacity=0,finishopacity=100,style=1,startx=0,starty=85,finishx=150,finishy=85);
-}*/
 
 .estage-edit-dialog .ui-dialog{
     width:510px;
