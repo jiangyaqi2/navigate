@@ -1,3 +1,47 @@
-<h1>
-  {{title}}
-</h1>
+<div style="height: 30px;   
+     display: block;
+     border-bottom: solid 1px #dde3e6;
+     padding: 30px;
+     overflow: hidden;
+     background-color: #1976D2;
+     ">
+    <div style="display: block;
+         width: 290px;
+         float: left;
+         height: auto;
+         z-index: 999;
+         margin: -23px 0px 0px 0px;
+         padding-top: 25px;
+         line-height: 30px;font-size: 20px;color: #fdfdfd;font-weight: bold">
+        QRCM 快速反应跟踪管理系统
+    </div>
+
+    <button pButton type="text" label="退出登录" style=" margin: -15px 0px 0px 0px;
+            float: right;width: 80px;height: 60px;background-color: #f7f6f6;color: #1976D2">
+
+    </button>
+    <button pButton type="text" label="个人资料" style=" margin: -15px 20px 0px 0px;
+            float: right;width: 80px;height: 60px;background-color: #f7f6f6;color: #1976D2">
+
+    </button>
+</div>
+
+<div class="menuSide">
+    <div class="menuSideIndent" >
+        <div *ngFor="let item of routerItems">
+            <span (click)="onSelectItem(item)"  class="menuSideMainLink bordersOfMenuSide {{currRouterItem == item ?'menuSideMainLinkDark':''}} "  >
+                <span  class="mainLinkText">
+                    {{item.label}} 
+                </span>   
+                <div class="menuSideMainLinkIcon fa {{item.items ? (currRouterItem == item ? 'fa-angle-up' : 'fa-angle-down') : ''}} "  >
+                </div>
+            </span>
+            <div class="{{item.items != null ? 'subMenuLinkContainer ':' '}} {{currRouterItem == item ? 'submenushow':'submenuhide'}}" ng-reflect-initial-classes="subMenuLinkContainer" >
+                <a *ngFor="let subItem of item.items" (click)="onSelectSubItem(subItem)" class="subMenuLink">● {{subItem.label}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="menuContent" >
+    <!--<router-outlet></router-outlet>-->
+</div>
